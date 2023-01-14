@@ -8,7 +8,13 @@ body{
 :root {
   --brand-color: #2196f3;
 }
-
+h1 h2 h3{
+  margin:0;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
 .container{
   width: 1200px;
   padding-right: 15px;
@@ -18,12 +24,11 @@ body{
 .section-background {
   background: #ffffff;
   display: flex;
-  justify-content: space-between;
-}
-.div-header{
-  display: flex;
-  align-items: center;
-}
+  justify-content: space-between;  
+  }
+  .bord{
+border-bottom: 1px solid #ECECEC;
+  }
 /* nombre de la pagina webStudio*/
 .name-page {
   color: var(--brand-color);
@@ -49,13 +54,13 @@ list-style-type:none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  padding: 10px 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
   list-style-type: none;
 }
-
 .nav-link:hover {
   color: var(--brand-color);
 }
@@ -69,8 +74,8 @@ list-style-type:none;
 .list-contact{
   list-style-type: none;
   display: flex;
+  padding-top:10px;
   gap: 50px;
-  
 }
 .contact {
   color: #757575; 
@@ -85,14 +90,17 @@ list-style-type:none;
   color: var(--brand-color);
 }
 .main-section {
-  background: #2f303a;
+  background-color: #2f303a;
   height: 600px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 /* SOLUCIONES EFICACES PARA SU NEGOCIO */
 .title-solutions {
   font-family: "Roboto";
-  padding-top: 200px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -102,20 +110,12 @@ list-style-type:none;
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .btn-request {
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
   width: 261px;
   font-family: "Roboto";
   font-style: normal;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 32px;
-  gap: 10px;
   padding: 10px 32px;
   background-color: var(--brand-color);
   color: white;
@@ -127,12 +127,12 @@ list-style-type:none;
     box-shadow: 0px 12px 15px 10px rgba(0, 0, 0, 0.1);
 }
 .features{
+  padding-top: 30px;
   list-style-type: none;
   display:flex;
   justify-content: center;
   padding-left: 0px;
-  
-}
+  }
 .title-description {
   font-family: "Roboto";
   font-style: normal;
@@ -154,7 +154,13 @@ list-style-type:none;
 }
 .pics-section{
   list-style-type: none;
+  padding: 95px 0px;
   }
+.list-pics{
+list-style-type: none; 
+display: flex;
+justify-content: space-between; 
+}
 .title-function {
   font-family: "roboto";
   font-style: normal;
@@ -163,9 +169,15 @@ list-style-type:none;
   line-height: 1.16;
   text-align: center;
 }
+.img-team{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-between;
+  margin: 0;
+}
 .team-section {
   background: #f5f4fa;
-  
+  padding: 95px;
 }
 .team-title {
   width: 97px;
@@ -194,6 +206,10 @@ list-style-type:none;
 .footer {
   background: #2f303a;
 }
+.list-footer{
+  list-style-type: none; 
+  padding-left: 9px;
+}
 .address {
   font-style: normal;
 }
@@ -210,15 +226,22 @@ list-style-type:none;
   color: var(--brand-color);
 }
 /* portafolio */
+.btn-port{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin: 0;
+}
 .ul-btn{
   list-style-type: none; 
   display: flex; 
   justify-content: center;
   width: 1200px;
   padding-top: 20px;}
-.btn-menu {
+
+.btn-menu{
   font-family: "Roboto";
   cursor: pointer;
+  padding: 6px 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -252,6 +275,29 @@ list-style-type:none;
   font-size: 18px;
   line-height: 36px;
   color: #212121;
+}
+.img-port{
+border: 1px; 
+color:#EEEEEE;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.img-menu{
+  padding: 20px;
+  margin: 0;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+border: 1px solid #EEEEEE;
+}
+.img-menu:hover{
+  cursor: pointer;
+}
+.div-port{
+  display: flex; 
+  justify-content: center; 
+  gap: 30px;
+}
+.last{
+  margin-bottom: 50px;
 }
 .text-folder {
   font-family: "roboto";
