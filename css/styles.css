@@ -25,7 +25,12 @@ ul{
   background: #ffffff;
   display: flex;
   justify-content: space-between;  
+  padding: 25px 0;
   }
+.div-header{
+  display: flex;
+  gap: 60px;
+}
   .bord{
 border-bottom: 1px solid #ECECEC;
   }
@@ -46,15 +51,14 @@ border-bottom: 1px solid #ECECEC;
 .list-menu{
 list-style-type:none; 
   display:flex;
+  gap: 15px;
 }
 .nav-link {
   display: flex;
-  width: 100px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  padding: 10px 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -69,6 +73,10 @@ list-style-type:none;
 }
 .nav-link.current{
   color: var(--brand-color);
+}
+.nav-header{
+  display: flex;
+  align-items: center;
 }
 /* contactos del correo y telefono */
 .list-contact{
@@ -226,12 +234,10 @@ justify-content: space-between;
   color: var(--brand-color);
 }
 /* portafolio */
-.btn-port{
+.ul-btn{
   padding-top: 30px;
   padding-bottom: 60px;
   margin: 0;
-}
-.ul-btn{
   list-style-type: none; 
   display: flex; 
   justify-content: center;
@@ -268,6 +274,16 @@ justify-content: space-between;
   border-radius: 4px;
   color: #FFFFFF;
 }
+.filter-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.list-port{
+  line-height: 0;
+}
 .title-design {
   font-family: "Roboto";
   font-style: normal;
@@ -276,28 +292,25 @@ justify-content: space-between;
   line-height: 36px;
   color: #212121;
 }
+
 .img-port{
 border: 1px; 
 color:#EEEEEE;
-padding-top: 20px;
-padding-bottom: 20px;
 }
 .img-menu{
   padding: 20px;
   margin: 0;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-border: 1px solid #EEEEEE;
 }
 .img-menu:hover{
   cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+border: 1px solid #EEEEEE;
 }
 .div-port{
+  list-style-type: none;
   display: flex; 
   justify-content: center; 
   gap: 30px;
-}
-.last{
-  margin-bottom: 50px;
 }
 .text-folder {
   font-family: "roboto";
@@ -315,4 +328,11 @@ border: 1px solid #EEEEEE;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+.last{
+  padding-bottom: 80px;
+}
+.sec-port{
+  padding-top:50px;
+  padding-bottom: 50px;
 }
