@@ -283,9 +283,12 @@ justify-content: space-between;
   justify-content: space-around;
   flex-wrap: wrap;
   row-gap: 1rem;
-}
+  }
 .list-port{
   line-height: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #EEEEEE;
 }
 .title-design {
   font-family: "Roboto";
@@ -295,7 +298,6 @@ justify-content: space-between;
   line-height: 36px;
   color: #212121;
 }
-
 .img-port{
 border: 1px; 
 color:#EEEEEE;
@@ -307,7 +309,6 @@ color:#EEEEEE;
 .list-port:hover{
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-border: 1px solid #EEEEEE;
 }
 .div-port{
   list-style-type: none;
