@@ -213,10 +213,12 @@ justify-content: space-between;
   }
 .footer {
   background: #2f303a;
+  padding-top: 60px;
 }
 .list-footer{
   list-style-type: none; 
   padding-left: 9px;
+  margin-bottom: 40px;
 }
 .address {
   font-style: normal;
@@ -276,6 +278,7 @@ justify-content: space-between;
 }
 .filter-list{
   list-style-type: none;
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -301,7 +304,7 @@ color:#EEEEEE;
   padding: 20px;
   margin: 0;
 }
-.img-menu:hover{
+.list-port:hover{
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 border: 1px solid #EEEEEE;
@@ -328,9 +331,6 @@ border: 1px solid #EEEEEE;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-}
-.last{
-  padding-bottom: 80px;
 }
 .sec-port{
   padding-top:50px;
